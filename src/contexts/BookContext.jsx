@@ -12,7 +12,7 @@ export const BookContextProvider = (props) => {
   const addBook = (title, author) => {
     setBooks([...books, { id: uuid(), title, author }]);
   };
-
+  
   const removeBook = (id) => {
     setBooks(books.filter((book) => book.id !== id));
   };
