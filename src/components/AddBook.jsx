@@ -28,7 +28,7 @@ const AddBook = () => {
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
       />
-      <input type="submit" value="Kitap Ekle"/>
+      <input type="submit" value="Kitap Ekle" />
     </form>
   );
 };

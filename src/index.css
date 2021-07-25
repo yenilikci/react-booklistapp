@@ -55,8 +55,42 @@ body {
 }
 
 .empty {
-  font-size: 1.5em  ;
+  font-size: 1.5em;
   margin: 20px;
   text-align: center;
   color: #000;
+}
+
+form {
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: oblique;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #ea8685;
+  color: #fff;
+  border: 2px dashed #fff;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  margin: 10px auto;
+  background: rgb(33, 255, 100);
+  color: #000;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 3px;
+  border: none;
+  padding: 6px 20px;
+  display: block;
 }
