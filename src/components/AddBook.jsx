@@ -2,14 +2,14 @@ import React, { useContext, useState } from "react";
 import { BookContext } from "../contexts/BookContext";
 
 const AddBook = () => {
-  const { addBook } = useContext(BookContext);
+  const { dispatch } = useContext(BookContext);
 
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault(); //postback block
-    addBook(title, author);
+    dispatch({ type: "ADD_BOOK", book: { title, author } }); //action type param , payload param
     setTitle("");
     setAuthor("");
   };
